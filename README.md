@@ -36,7 +36,9 @@ SSO_OBK_CLIENTS_URL=${SSO_HTTP_SCHEME}://${SSO_URL}/auth/admin/realms/${SSO_OBK_
 
 ### 1- Setup initial configurations
 
-01.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/01.png" width="40%" height="40%" />
+</p>
 
 ##### 1-1 Create realm `openbanking` with UMA option enabled
 ##### 1-2 Create user `raphael` under realm `openbanking` with password `12345`
@@ -51,11 +53,15 @@ Open the `Authorization` tab on `consent-mgmt-resource-server` client.
 
 ##### 2-1 Enable the following options on `Settings`
 
-02.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/02.png" width="80%" height="80%" />
+</p>
 
 ##### 2-2 Open `Authorization Scopes` tab. Create the following `Scope`s: `bank-account:basic`, `bank-account:detail`, `bank-balance:read`, `bank-statement:basic`, `bank-statement:detail`
 
-03.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/03.png" width="80%" height="80%" />
+</p>
 
 ##### 2-3 Open `Resources` tab. That's the place we're creating the resources for every `customer` for our banking solution.
 PS. As we cannot create `resources` to a specific owner but `consent-mgmt-resource-server` itself, we'll need to rely on Keycloak RESTful API. For this we will use the `Protection API` from Keycloak
@@ -119,11 +125,17 @@ To create resources and allow resource owners to manage these resources, you mus
 
 PS. Don't remove the `Default Resource` resource. 
 
-04.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/04.png" width="80%" height="80%" />
+</p>
 
-05.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/05.png" width="80%" height="80%" />
+</p>
 
-07.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/07.png" width="80%" height="80%" />
+</p>
 
 ### 3- User-Managed Access: Authorization Process
 
@@ -228,7 +240,9 @@ SSO_OBK_CONSENT_MGMT_RESOURCE_2_UUID=$(curl -v -k -X GET "$SSO_OBK_RESOURCE_2_UR
   | jq -r '.[0]._id')
 ```
 
-06.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/06.png" width="80%" height="80%" />
+</p>
 
 ###### 3-3-D With all resources UUID's, let's request the RPT in order to acquire the `permission ticket`:
 
