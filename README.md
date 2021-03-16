@@ -60,7 +60,7 @@ Open the `Authorization` tab on `consent-mgmt-resource-server` client.
 ##### 2-2 Open `Authorization Scopes` tab. Create the following `Scope`s: `bank-account:basic`, `bank-account:detail`, `bank-balance:read`, `bank-statement:basic`, `bank-statement:detail`
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/03.png" width="80%" height="80%" />
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/03.png" width="90%" height="90%" />
 </p>
 
 ##### 2-3 Open `Resources` tab. That's the place we're creating the resources for every `customer` for our banking solution.
@@ -126,15 +126,15 @@ To create resources and allow resource owners to manage these resources, you mus
 PS. Don't remove the `Default Resource` resource. 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/04.png" width="80%" height="80%" />
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/04.png" width="100%" height="100%" />
 </p>
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/05.png" width="80%" height="80%" />
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/05.png" width="90%" height="90%" />
 </p>
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/07.png" width="80%" height="80%" />
+<img src="https://raw.githubusercontent.com/aelkz/keycloak-consent-mgmt-uma/master/images/07.png" width="100%" height="100%" />
 </p>
 
 ### 3- User-Managed Access: Authorization Process
